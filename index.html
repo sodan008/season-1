@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>봄정취</title>
+    <script>
+        function hide() {
+           //this.style.display='none';
+           document.getElementsByTagName('img')[1].style.display='none'; 
+        }
+    </script>
+    <style>
+        body {margin: 0;}
+        #layout {max-width: 1000px; border: 1px solid green; margin: auto; position: relative;}
+        h1 {text-align: center; text-shadow: -3px -3px 0px orange;}
+        #layout img {width: 100%; display: block;}
+        #layout img[alt="파란나비"] {position: absolute; width: 10%; right: 15%; top: 60%;}
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <h1>봄풍경</h1>
+        <img src="images/spring.jpg" alt="봄">
+        <img src="images/blue_fly.png" alt="파란나비" onclick="this.style.display='none';">
+    </div>
+</body>
+</html>
